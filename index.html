@@ -3,7 +3,6 @@ layout: default
 title: Paul's Blog
 comments: false
 ---
-
 <h2>{{ page.title }}</h2>
 <p>What's new:</p>
 <ul>
@@ -11,4 +10,3 @@ comments: false
 		<li>{{ post.date | date_to_string}} <a href="{{ site.baseurl }}{{ post.url}}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
-{% include disqus.html %}
